@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*estilos al header*/
+
+.header{
+    background:linear-gradient(210deg,#f36f65,#f10354);
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 100%;
+}
+
+.header__logo__content{
+    height: 160px;
+    width: 280px;
+    margin: 10px 10px 10px 10px;
+}
+
+.header__logo--img{
+    max-width: 100%;
+    height: 100%;
+}
+
+/*estilos al nav*/
+.header__items__contennt{
+    height: 100px;
+    width: 340px;
+    margin:auto;
+}
+
+.header__items__contennt>ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.header__items__contennt>ul>li{
+    margin: 15px 15px 15px 15px;
+    height: 60px;
+    width: 120px;
+    transition-property: border solid #ffffff;
+    transition-duration: 0.2s;
+}
+
+.icon--home,.icon--user,.icon--play,.icon--config{
+    color: #ffffff;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.header__items__contennt>ul>li:hover{
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+/*estilo hr*/
+
+.titulo__empresa{
+    color: #f10354;
+    font-size: 38px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.hr{
+    color: #f10354;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    width: 500px;
+}
+
+
+/*estilos del banner*/
+.banner{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.banner__img__content{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    margin:20px 20px 20px 20px;
+    transition-property: width height;
+    transition-duration: 1s;
+}
+
+
+.banner__img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: 100%;
+    transition-property: width height;
+    transition-duration: 1s;
+}
+
+.banner__img:hover{
+    border-radius: 5px;
+    height: 96%;
+    padding-left: 10px;
+    padding-top: 5px;
+    max-width: 96%;
+}
+
+
+.information__content{
+    width: 800px;
+    height: 350px;
+    margin: 20px 20px 20px 20px;
+}
+
+
+.information__content>h1{
+    margin: auto;
+    text-align: center;
+    color: #f10354;
+}
+
+.information__content>p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.information__content>h1::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+/*empresas*/
+
+.empresas{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.empresas__content--titulo{
+    color: #f10354;
+    height: 100px;
+    width: 20%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.empresas__content--titulo>h2::first-letter{
+    text-transform: uppercase;
+  
+}
+
+.empresas__content__img{
+    background-color: #d7d7d7;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+}
+
+.empresas__content__img>div{
+    border-radius: 10px;
+    height: 200px;
+    width: 300px;
+    margin: 45px 10px 10px 10px;
+    transition-duration: 0.5s;
+}
+
+.empresas__content__img>div:hover{
+    height: 210px;
+    width: 310px;
+    transition-duration: 0.5s;
+    margin: 40px 12px 12px 12px;
+}
+
+.empresas__img--star:hover,.empresas__img--marvel:hover,
+.empresas__img--national:hover{
+    filter: drop-shadow(8px 8px 4px #f36f65);
+    transition-duration: 1s;
+}
+
+.empresas__img--pixar:hover{
+    filter: drop-shadow(10px 10px 4px #f36f65);
+}
+
+
+.empresas__img--pixar{
+    background-image: url(pixar.jpg);
+    background-repeat: round;
+}
+
+.empresas__img--marvel{
+    background-image: url(Marvel-Studios.png);
+    background-repeat: round;
+}
+
+.empresas__img--national{
+    background-image: url(national.jpg);
+    background-repeat: round;
+}
+
+
+.empresas__img--star{
+    background-image: url(star-wars.png);
+    background-repeat: round;
+}
